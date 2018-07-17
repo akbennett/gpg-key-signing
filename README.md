@@ -20,7 +20,7 @@ Even if you alredy have a GPG key-pair, it would be wise to have a Foundries-spe
 Let's just generate a RSA 4096 key that never expires, so we are able to sign and encrypt. While the master key will never expire, the keys we will actually use on a daily basis will expire.
 
 ```bash
- $ gpg2 --full-generate-key
+ $ gpg2 --full-gen-key
 ```
 
 Select options like in here:
