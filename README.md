@@ -601,3 +601,20 @@ As part of the text of the release, you should also provide MD5 and SHA256 check
 $ md5sum lmp-gateway-image-raspberrypi3-64.img.gz
 $ sha256sum lmp-gateway-image-raspberrypi3-64.img.gz
 ```
+### 7.0 Signing keys
+
+Import the key
+
+```
+gpg2 --import tyler@foundries.io.asc
+```
+Sign the key
+
+```
+gpg2 --sign-key --default-key 562C3B2B19600D79160B451EE3950BF5AE4B84A tyler@foundries.io
+```
+Publish the key
+
+```
+gpg2 --export --armor tyler@foundries.io > tyler\@foundries.io.asc
+```
