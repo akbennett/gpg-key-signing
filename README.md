@@ -15,7 +15,7 @@ __This walkthrough refers to `gpg (GnuPG) 2.1.18`, please make sure to have the 
 
 ## 1. Create your PGP Key
 
-Even if you alredy have a GPG key-pair, it would be wise to have a IOTA-specific pair. If you still want to use your existing keypair, please make sure to understand how PGP subkeys work and skip to section 2.
+Even if you alredy have a GPG key-pair, it would be wise to have a Foundries-specific pair. If you still want to use your existing keypair, please make sure to understand how PGP subkeys work and skip to section 2.
 
 Let's just generate a RSA 4096 key that never expires, so we are able to sign and encrypt. While the master key will never expire, the keys we will actually use on a daily basis will expire.
 
