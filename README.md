@@ -211,8 +211,6 @@ The Master Key's secret will be needed to:
 3. Revoke Master Key.
 4. Sign other people's Master Keys.
 
-__You will need the Master Key's backup to participate in the SumSum Key Signing party!__
-
 ### 3.1 Generate Revocation Certificate
 Let's generate a revocation certificate for the Master Key. This will be the only way to retract your Master Key in case you loose it.
 
@@ -349,8 +347,6 @@ ssb   rsa4096 2018-06-14 [E] [expires: 2019-06-14]
 ### 3.5 Move Key's secret to Yubikey 4
 
 Make sure the `pcscd` (On Linux) / `CryptoTokenKit` or `pcsc-lite` on Mac OSX SmartCard middleware is running on your host to interact with the smartcard.
-
-If you don't have your YubiKey, one will be provided as part of the Welcome goodies at the SumSum 2018, and you can perform the following steps then.
 
 Plug your Yubikey in!
 
