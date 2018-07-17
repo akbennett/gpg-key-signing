@@ -268,7 +268,7 @@ __Store the file in a safe, offline and easy-to-remember place and delete it fro
 $ gpg2 --delete-secret-key B3DFA611285A0FF08D4151AE2E1920CC6D2B72DD
 ```
 
-`gpg` will interactively prompt what secret keys you want to delete.
+`gpg2` will interactively prompt what secret keys you want to delete.
 __REMOVE THE MASTER KEY'S SECRET ONLY, LEAVING SUBKEYS ALONE__.
 
 Example output:
@@ -355,7 +355,7 @@ Plug your Yubikey in!
 Yubikey cards implement several modules and protocols for you to interact with the card. We will be interacting with the OpenPGP module of the card through the `gpg` cli.
 
 ```
-$ gpg2 --edit-card
+$ gpg2 --card-edit
 [BLURRED]
 gpg/card> 
 ```
