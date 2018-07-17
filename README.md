@@ -569,7 +569,7 @@ Get into your `` repo folder and let's alter the local `git` configuration.
 ```
 $ git config user.email tyler@foundries.io
 $ git config user.name 'Tyler Baker'
-$ git config user.signkey B3DFA611285A0FF08D4151AE2E1920CC6D2B72DD
+$ git config user.signingkey B3DFA611285A0FF08D4151AE2E1920CC6D2B72DD
 $ git config commit.gpgSign true
 ```
 
