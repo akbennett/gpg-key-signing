@@ -448,14 +448,14 @@ ssb  rsa4096/2FBE06F3FC085E04
      created: 2018-06-14  expires: 2019-06-14  usage: E   
 [ultimate] (1). Tyler Baker (Tyler Baker Foundries Identity) <tyler@foundries.io>
 
-gpg> key 2
+gpg> key 1
 
 pub  rsa4096/2E1920CC6D2B72DD
      created: 2018-06-14  expires: never       usage: SC  
      trust: ultimate      validity: ultimate
-ssb  rsa4096/97A4AC4092576B55
+ssb* rsa4096/97A4AC4092576B55
      created: 2018-06-14  expires: 2019-06-14  usage: S   
-ssb* rsa4096/2FBE06F3FC085E04
+ssb  rsa4096/2FBE06F3FC085E04
      created: 2018-06-14  expires: 2019-06-14  usage: E   
 [ultimate] (1). Tyler Baker (Tyler Baker Foundries Identity) <tyler@foundries.io>
 
