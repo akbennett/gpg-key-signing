@@ -477,8 +477,8 @@ $ gpg2 -K
 sec#  rsa4096 2018-06-14 [SC]
       B3DFA611285A0FF08D4151AE2E1920CC6D2B72DD
 uid           [ultimate] Tyler Baker (Tyler Baker Foundries Identity) <tyler@foundries.io>
-ssb   rsa4096 2018-06-14 [S] [expires: 2019-06-14]
-ssb>  rsa4096 2018-06-14 [E] [expires: 2019-06-14]
+ssb>  rsa4096 2018-06-14 [S] [expires: 2019-06-14]
+ssb   rsa4096 2018-06-14 [E] [expires: 2019-06-14]
 ```
 
 The `>` symbol next to your Sub Key means that the secret is safely stored on the SmartCard. Notice that, by now, you should also have backed-up and removed the Master Key secret from the device as explained in section `3.3`, hence the `#` symbol next to the Master Key.
@@ -605,16 +605,18 @@ $ sha256sum lmp-gateway-image-raspberrypi3-64.img.gz
 
 Import the key
 
+To sign other keys, you must have the master key in your keyring. Otherwise, you will recieve a message like "gpg: signing failed: No secret key" if you don't have a master key in your keyring.
+
 ```
-gpg2 --import tyler@foundries.io.asc
+gpg2 --keyserver pgp.mit.edu --recv-key <key id you want to sign>
 ```
 Sign the key
 
 ```
-gpg2 --sign-key --default-key 562C3B2B19600D79160B451EE3950BF5AE4B84A tyler@foundries.io
+gpg2 --sign-key --default-key 562C3B2B19600D79160B451EE3950BF5AE4B84A <key id you want to sign email address>
 ```
-Publish the key
+Upload the key
 
 ```
-gpg2 --export --armor tyler@foundries.io > tyler\@foundries.io.asc
+gpg2 --keyserver pgp.mit.edu --send-key <key id you signed>
 ```
