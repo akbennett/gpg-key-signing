@@ -114,13 +114,13 @@ There is NO WARRANTY, to the extent permitted by law.
 Secret key is available.
 
 sec  rsa4096/2E1920CC6D2B72DD
-     created: 2018-06-14  expires: never       usage: SC  
+     created: 2018-06-14  expires: never       usage: SC
      trust: ultimate      validity: ultimate
 ssb  rsa4096/2FBE06F3FC085E04
-     created: 2018-06-14  expires: never       usage: E   
+     created: 2018-06-14  expires: never       usage: E
 [ultimate] (1). Tyler Baker (Tyler Baker Foundries Identity) <tyler@foundries.io>
 
-gpg> 
+gpg>
 ```
 
 Currently we have a master key and an encryption subkey, no expiration date is set for neither of them.
@@ -131,10 +131,10 @@ At continuation we set an expiration date for the first subkey and we create a s
 gpg> key 1
 
 sec  rsa4096/2E1920CC6D2B72DD
-     created: 2018-06-14  expires: never       usage: SC  
+     created: 2018-06-14  expires: never       usage: SC
      trust: ultimate      validity: ultimate
 ssb* rsa4096/2FBE06F3FC085E04
-     created: 2018-06-14  expires: never       usage: E   
+     created: 2018-06-14  expires: never       usage: E
 [ultimate] (1). Tyler Baker (Tyler Baker Foundries Identity) <tyler@foundries.io>
 
 gpg> expire
@@ -150,10 +150,10 @@ Key expires at Fri 14 Jun 2019 11:37:16 AM UTC
 Is this correct? (y/N) y
 
 sec  rsa4096/2E1920CC6D2B72DD
-     created: 2018-06-14  expires: never       usage: SC  
+     created: 2018-06-14  expires: never       usage: SC
      trust: ultimate      validity: ultimate
 ssb* rsa4096/2FBE06F3FC085E04
-     created: 2018-06-14  expires: 2019-06-14  usage: E   
+     created: 2018-06-14  expires: 2019-06-14  usage: E
 [ultimate] (1). Tyler Baker (Tyler Baker Foundries Identity) <tyler@foundries.io>
 
 gpg> addkey
@@ -188,12 +188,12 @@ You should end up in a similar configuration:
 gpg> list
 
 sec  rsa4096/2E1920CC6D2B72DD
-     created: 2018-06-14  expires: never       usage: SC  
+     created: 2018-06-14  expires: never       usage: SC
      trust: ultimate      validity: ultimate
 ssb* rsa4096/2FBE06F3FC085E04
-     created: 2018-06-14  expires: 2019-06-14  usage: E   
+     created: 2018-06-14  expires: 2019-06-14  usage: E
 ssb  rsa4096/97A4AC4092576B55
-     created: 2018-06-14  expires: 2019-06-14  usage: S   
+     created: 2018-06-14  expires: 2019-06-14  usage: S
 [ultimate] (1). Tyler Baker (Tyler Baker Foundries Identity) <tyler@foundries.io>
 
 gpg> save
@@ -233,7 +233,7 @@ Please select the reason for the revocation:
 (Probably you want to select 1 here)
 Your decision? 0
 Enter an optional description; end it with an empty line:
-> 
+>
 Reason for revocation: No reason specified
 (No description given)
 Is this okay? (y/N) y
@@ -357,7 +357,7 @@ Yubikey cards implement several modules and protocols for you to interact with t
 ```
 $ gpg2 --card-edit
 [BLURRED]
-gpg/card> 
+gpg/card>
 ```
 
 Information of the card will be listed.
@@ -440,26 +440,26 @@ There is NO WARRANTY, to the extent permitted by law.
 Secret key is available.
 
 pub  rsa4096/2E1920CC6D2B72DD
-     created: 2018-06-14  expires: never       usage: SC  
+     created: 2018-06-14  expires: never       usage: SC
      trust: ultimate      validity: ultimate
 ssb  rsa4096/97A4AC4092576B55
-     created: 2018-06-14  expires: 2019-06-14  usage: S   
+     created: 2018-06-14  expires: 2019-06-14  usage: S
 ssb  rsa4096/2FBE06F3FC085E04
-     created: 2018-06-14  expires: 2019-06-14  usage: E   
+     created: 2018-06-14  expires: 2019-06-14  usage: E
 [ultimate] (1). Tyler Baker (Tyler Baker Foundries Identity) <tyler@foundries.io>
 
 gpg> key 1
 
 pub  rsa4096/2E1920CC6D2B72DD
-     created: 2018-06-14  expires: never       usage: SC  
+     created: 2018-06-14  expires: never       usage: SC
      trust: ultimate      validity: ultimate
 ssb* rsa4096/97A4AC4092576B55
-     created: 2018-06-14  expires: 2019-06-14  usage: S   
+     created: 2018-06-14  expires: 2019-06-14  usage: S
 ssb  rsa4096/2FBE06F3FC085E04
-     created: 2018-06-14  expires: 2019-06-14  usage: E   
+     created: 2018-06-14  expires: 2019-06-14  usage: E
 [ultimate] (1). Tyler Baker (Tyler Baker Foundries Identity) <tyler@foundries.io>
 
-gpg> keytocard 
+gpg> keytocard
 Please select where to store the key:
    (1) Signature key
    (3) Authentication key
@@ -496,15 +496,15 @@ There is NO WARRANTY, to the extent permitted by law.
 Secret key is available.
 
 sec  rsa4096/2E1920CC6D2B72DD
-     created: 2018-06-14  expires: never       usage: SC  
+     created: 2018-06-14  expires: never       usage: SC
      trust: ultimate      validity: ultimate
 ssb  rsa4096/97A4AC4092576B55
-     created: 2018-06-14  expires: 2019-06-14  usage: S   
+     created: 2018-06-14  expires: 2019-06-14  usage: S
 ssb  rsa4096/2FBE06F3FC085E04
-     created: 2018-06-14  expires: 2019-06-14  usage: E   
+     created: 2018-06-14  expires: 2019-06-14  usage: E
 [ultimate] (1). Tyler Baker (Tyler Baker Foundries Identity) <tyler@foundries.io>
 
-gpg> keytocard 
+gpg> keytocard
 Really move the primary key? (y/N) y
 Please select where to store the key:
    (1) Signature key
@@ -544,7 +544,7 @@ Copy and paste the output as a GPG key under your GitHub profile.
 
 ### 4.2 Configure git for signing
 
-We now want to configure `git` to make use of the signing GPG subkey, corresponding to the Master Key we uploaded to GitHub. Since we deleted the private portion of the Master Key, a valid signing subkey will be used instead. 
+We now want to configure `git` to make use of the signing GPG subkey, corresponding to the Master Key we uploaded to GitHub. Since we deleted the private portion of the Master Key, a valid signing subkey will be used instead.
 
 ```
 $ gpg2 -K
@@ -575,6 +575,27 @@ $ git config commit.gpgSign true
 
 From now on, every commit you issue from this device will be signed with the configured PGP key.
 Since you uploaded the public part to GitHub, they will be marked as _Verified_.
+
+### 4.3 System specific configuration
+
+#### 4.3.1 MacOS X
+
+In order to sign commits with MacOS you'll need a few additional items
+
+1. ``brew install gpg``  # at the time this was written, version: gpg (GnuPG) 2.2.7
+
+2. add no-tty to ~/.gnupg/gpg.conf
+
+```
+echo "no-tty" >> ~/.gnupg/gpg.conf
+```
+
+3. ``brew install pinentry-mac``
+4. add pinentry-mac to ~/.gnupg/gpg-agent.conf
+
+```
+echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+```
 
 ## 5. Expiration?
 
